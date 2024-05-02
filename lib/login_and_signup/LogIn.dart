@@ -8,6 +8,7 @@ import 'package:tennis_login/login_and_signup/sign_up.dart';
 import 'package:tennis_login/login_and_signup/user.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'package:tennis_login/general_user/match_Info.dart';
 
 class LogIn extends StatefulWidget {
   LogIn({required Key key}) : super(key: key);
@@ -275,30 +276,10 @@ class _LogInState extends State<LogIn> {
                           )
                       ),
                       onPressed: () {
-                        if (user_formKey.currentState!.validate()) {
-                          save();
-                          //로그인 성공 시 사용자 메인화면으로 이동
-                        }
-                        else {
-                          showDialog(
-                              context: context,
-                              builder: (BuildContext context){
-                                return AlertDialog(
-                                  content: Text('로그인에 실패하셨습니다.'),
-                                  actions: [
-                                    Center(
-                                      child: ElevatedButton(
-                                        child: Text('확인') ,onPressed: () {
-                                        Navigator.of(context).pop();
-                                      },
-                                      ),
-                                    )
-                                  ],
-                                );
-                              }
-                          );
-                          // 실패시 실패 메세지 출력
-                        }
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => matching_Info())
+                        );
                       },
                       child: Text(
                           '로그인',
