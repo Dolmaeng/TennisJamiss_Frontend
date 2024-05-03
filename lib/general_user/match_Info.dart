@@ -13,7 +13,7 @@ class matching_Info_state extends State<matching_Info> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          title: Text('매치 정보 입력',
+          title: Text('매치정보입력',
             style: TextStyle(
               color: Color(0xFF222222),
               fontSize: 14,
