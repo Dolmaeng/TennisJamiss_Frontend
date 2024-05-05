@@ -1,5 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- webview_flutter 에서 인터넷 접속을 위한 권한을 선언합니다 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:usesCleartextTraffic="true"
+    
         android:label="tennis_login"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">

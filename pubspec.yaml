@@ -37,11 +37,14 @@ dependencies:
   cupertino_icons: ^1.0.6
   mongo_dart: ^0.10.1
   flutter_svg: ^2.0.10+1
+  webview_flutter: ^4.7.0
+  flutter_inappwebview: ^5.8.0
+  kakao_map_plugin: ^0.3.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  intl: ^0.17.0
+  intl: ^0.19.0
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
