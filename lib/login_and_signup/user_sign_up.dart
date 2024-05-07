@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
@@ -545,8 +544,10 @@ class _FormWidgetState extends State<FormWidget> {
                             child: ListTile(
                               dense: true,
                               visualDensity: VisualDensity(vertical: -4),
-                              leading: Icon(Icons.calendar_today,
-                              size: 15,),
+                              leading: Icon(
+                                Icons.calendar_today,
+                                size: 15,
+                              ),
                               title: Text(DateFormat('yyyy.MM.dd',).format(user_birthdate),
                                 style: TextStyle(
                                   color: Color(0xFF919191),
