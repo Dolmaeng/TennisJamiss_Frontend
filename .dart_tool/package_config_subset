@@ -58,6 +58,10 @@ fixnum
 2.19
 file:///Users/leo/.pub-cache/hosted/pub.dev/fixnum-1.1.0/
 file:///Users/leo/.pub-cache/hosted/pub.dev/fixnum-1.1.0/lib/
+flutter_dotenv
+2.12
+file:///Users/leo/.pub-cache/hosted/pub.dev/flutter_dotenv-5.1.0/
+file:///Users/leo/.pub-cache/hosted/pub.dev/flutter_dotenv-5.1.0/lib/
 flutter_inappwebview
 2.14
 file:///Users/leo/.pub-cache/hosted/pub.dev/flutter_inappwebview-5.8.0/
@@ -90,10 +94,6 @@ json_annotation
 3.0
 file:///Users/leo/.pub-cache/hosted/pub.dev/json_annotation-4.9.0/
 file:///Users/leo/.pub-cache/hosted/pub.dev/json_annotation-4.9.0/lib/
-kakao_map_plugin
-2.18
-file:///Users/leo/.pub-cache/hosted/pub.dev/kakao_map_plugin-0.3.0/
-file:///Users/leo/.pub-cache/hosted/pub.dev/kakao_map_plugin-0.3.0/lib/
 leak_tracker
 3.1
 file:///Users/leo/.pub-cache/hosted/pub.dev/leak_tracker-10.0.0/
@@ -274,6 +274,14 @@ tennis_login
 3.3
 file:///Users/leo/Desktop/%E1%84%81%E1%85%A1%E1%86%A8%E1%84%83%E1%85%AE%E1%84%80%E1%85%B5/2024-1/%E1%84%8F%E1%85%A2%E1%86%B8%E1%84%83%E1%85%B5/TennisJamiss_Frontend/
 file:///Users/leo/Desktop/%E1%84%81%E1%85%A1%E1%86%A8%E1%84%83%E1%85%AE%E1%84%80%E1%85%B5/2024-1/%E1%84%8F%E1%85%A2%E1%86%B8%E1%84%83%E1%85%B5/TennisJamiss_Frontend/lib/
+kakao_map_plugin
+2.18
+file:///Users/leo/Desktop/%E1%84%81%E1%85%A1%E1%86%A8%E1%84%83%E1%85%AE%E1%84%80%E1%85%B5/2024-1/%E1%84%8F%E1%85%A2%E1%86%B8%E1%84%83%E1%85%B5/TennisJamiss_Frontend/modules/kakao_map_plugin-0.3.0/
+file:///Users/leo/Desktop/%E1%84%81%E1%85%A1%E1%86%A8%E1%84%83%E1%85%AE%E1%84%80%E1%85%B5/2024-1/%E1%84%8F%E1%85%A2%E1%86%B8%E1%84%83%E1%85%B5/TennisJamiss_Frontend/modules/kakao_map_plugin-0.3.0/lib/
+kakao_map_plugin_example
+2.18
+file:///Users/leo/Desktop/%E1%84%81%E1%85%A1%E1%86%A8%E1%84%83%E1%85%AE%E1%84%80%E1%85%B5/2024-1/%E1%84%8F%E1%85%A2%E1%86%B8%E1%84%83%E1%85%B5/TennisJamiss_Frontend/modules/kakao_map_plugin-0.3.0/example/
+file:///Users/leo/Desktop/%E1%84%81%E1%85%A1%E1%86%A8%E1%84%83%E1%85%AE%E1%84%80%E1%85%B5/2024-1/%E1%84%8F%E1%85%A2%E1%86%B8%E1%84%83%E1%85%B5/TennisJamiss_Frontend/modules/kakao_map_plugin-0.3.0/example/lib/
 sky_engine
 3.2
 file:///Users/leo/flutter/bin/cache/pkg/sky_engine/

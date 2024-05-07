@@ -98,6 +98,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_dotenv",
+      "rootUri": "file:///Users/leo/.pub-cache/hosted/pub.dev/flutter_dotenv-5.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_inappwebview",
       "rootUri": "file:///Users/leo/.pub-cache/hosted/pub.dev/flutter_inappwebview-5.8.0",
       "packageUri": "lib/",
@@ -159,7 +165,13 @@
     },
     {
       "name": "kakao_map_plugin",
-      "rootUri": "file:///Users/leo/.pub-cache/hosted/pub.dev/kakao_map_plugin-0.3.0",
+      "rootUri": "../modules/kakao_map_plugin-0.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "kakao_map_plugin_example",
+      "rootUri": "../modules/kakao_map_plugin-0.3.0/example",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -440,7 +452,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-05T09:59:49.164046Z",
+  "generated": "2024-05-07T14:42:19.652546Z",
   "generator": "pub",
   "generatorVersion": "3.3.4"
 }

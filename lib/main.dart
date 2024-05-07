@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mongo_dart/mongo_dart.dart';
+// import 'package:mongo_dart/mongo_dart.dart';
 import 'package:tennis_login/login_and_signup/login.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:kakao_map_plugin/kakao_map_plugin.dart';
 
 // void main() {
 //   runApp(MyApp());
@@ -23,9 +25,7 @@ import 'package:tennis_login/login_and_signup/login.dart';
 
 
 
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:kakao_map_plugin/kakao_map_plugin.dart';
-import 'package:tennis_login/lib/src/home_screen.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,7 +38,8 @@ void main() async {
   /// dotEnv 대신 appKey 를 직접 넣어주셔도 됩니다.
   AuthRepository.initialize(
       appKey: dotenv.env['APP_KEY'] ?? '',
-      baseUrl: dotenv.env['BASE_URL'] ?? '');
+      // baseUrl: dotenv.env['BASE_URL'] ?? ''
+      );
 
   runApp(const MyApp());
 }
@@ -58,8 +59,13 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeScreen(),
+    return MaterialApp(
+      title: 'TennisJamiss',
+      theme: ThemeData(
+        primaryColor: Colors.white,
+        visualDensity: VisualDensity.adaptivePlatformDensity
+      ),
+      home: LogIn(key: UniqueKey())
     );
   }
 }

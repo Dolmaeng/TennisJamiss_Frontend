@@ -126,6 +126,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_dotenv:
+    dependency: "direct main"
+    description:
+      name: flutter_dotenv
+      sha256: "9357883bdd153ab78cbf9ffa07656e336b8bbb2b5a3ca596b0b27e119f7c7d77"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.1.0"
   flutter_inappwebview:
     dependency: "direct main"
     description:
@@ -203,11 +211,17 @@ packages:
   kakao_map_plugin:
     dependency: "direct main"
     description:
-      name: kakao_map_plugin
-      sha256: bf95c56c50ed038473a3524498f9d0ff17b3cb1d22324ae5498bdab4763f91a4
-      url: "https://pub.dev"
-    source: hosted
+      path: "modules/kakao_map_plugin-0.3.0"
+      relative: true
+    source: path
     version: "0.3.0"
+  kakao_map_plugin_example:
+    dependency: "direct main"
+    description:
+      path: "modules/kakao_map_plugin-0.3.0/example"
+      relative: true
+    source: path
+    version: "0.0.0"
   leak_tracker:
     dependency: transitive
     description:
