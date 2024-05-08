@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:http/http.dart' as http;
+import 'package:tennis_login/general_user/match_Info.dart';
 import 'package:tennis_login/login_and_signup/find_id.dart';
 import 'package:tennis_login/login_and_signup/find_pw.dart';
 import 'package:tennis_login/login_and_signup/sign_up.dart';
@@ -275,30 +276,34 @@ class _LogInState extends State<LogIn> {
                           )
                       ),
                       onPressed: () {
-                        if (user_formKey.currentState!.validate()) {
-                          save();
-                          //로그인 성공 시 사용자 메인화면으로 이동
-                        }
-                        else {
-                          showDialog(
-                              context: context,
-                              builder: (BuildContext context){
-                                return AlertDialog(
-                                  content: Text('로그인에 실패하셨습니다.'),
-                                  actions: [
-                                    Center(
-                                      child: ElevatedButton(
-                                        child: Text('확인') ,onPressed: () {
-                                        Navigator.of(context).pop();
-                                      },
-                                      ),
-                                    )
-                                  ],
-                                );
-                              }
-                          );
-                          // 실패시 실패 메세지 출력
-                        }
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => MatchInfo())
+                        );
+                        // if (user_formKey.currentState!.validate()) {
+                        //   save();
+                        //   //로그인 성공 시 사용자 메인화면으로 이동
+                        // }
+                        // else {
+                        //   showDialog(
+                        //       context: context,
+                        //       builder: (BuildContext context){
+                        //         return AlertDialog(
+                        //           content: Text('로그인에 실패하셨습니다.'),
+                        //           actions: [
+                        //             Center(
+                        //               child: ElevatedButton(
+                        //                 child: Text('확인') ,onPressed: () {
+                        //                 Navigator.of(context).pop();
+                        //               },
+                        //               ),
+                        //             )
+                        //           ],
+                        //         );
+                        //       }
+                        //   );
+                        //   // 실패시 실패 메세지 출력
+                        // }
                       },
                       child: Text(
                           '로그인',
