@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tennis_login/general_user/match_court_registered.dart';
 import 'package:tennis_login/general_user/match_court_Notregistered.dart';
+import 'package:tennis_login/src/loacation_map.dart';
 
 class matching_Info extends StatefulWidget{
   @override
@@ -29,6 +30,15 @@ class matching_Info_state extends State<matching_Info> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  new MaterialPageRoute(builder: (context) => LocationMap()),
+                );
+              },
+              child: Text('지도확인하기'),
+            ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
