@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
+import 'package:tennis_login/general_user/match_Info.dart';
 
 class TennisMatchScreen extends StatefulWidget {
   const TennisMatchScreen({
@@ -34,6 +35,17 @@ class _TennisMatchScreenState extends State<TennisMatchScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('앱바 영역'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.settings),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MatchInfo()),
+              );
+            },
+          ),
+        ],
       ),
       body: Flexible(
         child: CardSwiper(
