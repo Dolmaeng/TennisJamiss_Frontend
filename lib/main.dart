@@ -22,11 +22,6 @@ import 'package:kakao_map_plugin/kakao_map_plugin.dart';
 //   }
 // }
 
-
-
-
-
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -38,8 +33,7 @@ void main() async {
   /// dotEnv 대신 appKey 를 직접 넣어주셔도 됩니다.
   AuthRepository.initialize(
       appKey: dotenv.env['APP_KEY'] ?? '',
-      // baseUrl: dotenv.env['BASE_URL'] ?? ''
-      );
+      baseUrl: dotenv.env['BASE_URL'] ?? '');
 
   runApp(const MyApp());
 }
@@ -60,12 +54,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'TennisJamiss',
-      theme: ThemeData(
-        primaryColor: Colors.white,
-        visualDensity: VisualDensity.adaptivePlatformDensity
-      ),
-      home: LogIn(key: UniqueKey())
-    );
+        title: 'TennisJamiss',
+        theme: ThemeData(
+            primaryColor: Colors.white,
+            visualDensity: VisualDensity.adaptivePlatformDensity),
+        home: LogIn(key: UniqueKey()));
   }
 }
