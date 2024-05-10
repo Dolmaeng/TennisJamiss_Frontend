@@ -6,7 +6,7 @@ import 'package:kakao_map_plugin/kakao_map_plugin.dart';
 import 'package:tennis_login/login_and_signup/find_id.dart';
 import 'package:tennis_login/login_and_signup/find_pw.dart';
 import 'package:tennis_login/login_and_signup/sign_up.dart';
-import 'package:tennis_login/login_and_signup/user.dart';
+import 'package:tennis_login/login_and_signup/Login_Info.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:tennis_login/general_user/match_Info.dart';
@@ -46,7 +46,7 @@ class _LogInState extends State<LogIn> {
 
 
   // 로그인 폼
-  User user = User('','');
+  Login_Info user = Login_Info('','');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +78,7 @@ class _LogInState extends State<LogIn> {
                             fontSize: 10,
                             fontFamily: 'Pretendard',
                             fontWeight: FontWeight.w400,
-                            height: 0,
+                            height: 1.0,
                             letterSpacing: -0.10,
                             ),
                           textAlignVertical: TextAlignVertical(y:1.0),
@@ -142,7 +142,7 @@ class _LogInState extends State<LogIn> {
                           fontSize: 10,
                           fontFamily: 'Pretendard',
                           fontWeight: FontWeight.w400,
-                          height: 0,
+                          height: 1.0,
                           letterSpacing: -0.10,
                         ),
                         textAlignVertical: TextAlignVertical(y:1.0),

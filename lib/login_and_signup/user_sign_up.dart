@@ -21,7 +21,7 @@ class _UserSignUpState extends State<UserSignUp> {
             fontSize: 14,
             fontFamily: 'Pretendard',
             fontWeight: FontWeight.w700,
-            height: 0,
+            height: 1.0,
             letterSpacing: -0.14,
             ),
           ),
@@ -166,7 +166,7 @@ class _FormWidgetState extends State<FormWidget> {
                               fontSize: 10,
                               fontFamily: 'Pretendard',
                               fontWeight: FontWeight.w600,
-                              height: 0,
+                              height: 1.0,
                               letterSpacing: -0.10,
                               ),
                           ),
@@ -189,7 +189,7 @@ class _FormWidgetState extends State<FormWidget> {
                             fontSize: 8,
                             fontFamily: 'Pretendard',
                             fontWeight: FontWeight.w400,
-                            height: 0,
+                            height: 1.0,
                             letterSpacing: -0.08,
                             ),
                           textAlignVertical: TextAlignVertical(y:1.0),
@@ -217,6 +217,9 @@ class _FormWidgetState extends State<FormWidget> {
                               return null;
                             },
                           onSaved: (value) => ID = value!,
+                          onChanged: (value) {
+                            ID = value;
+                          },
                           decoration: InputDecoration(
                           // 입력창 배경은 회색, 선택할 때 흰색
                             hintText: '아이디를 입력해주세요 (6-20자)',
@@ -246,7 +249,7 @@ class _FormWidgetState extends State<FormWidget> {
                                       fontSize: 8,
                                       fontFamily: 'Pretendard',
                                       fontWeight: FontWeight.w400,
-                                      height: 0,
+                                      height: 1.0,
                                       letterSpacing: -0.08,
                                       ),
                                     ),
@@ -280,7 +283,7 @@ class _FormWidgetState extends State<FormWidget> {
                               fontSize: 10,
                               fontFamily: 'Pretendard',
                               fontWeight: FontWeight.w600,
-                              height: 0,
+                              height: 1.0,
                               letterSpacing: -0.10,
                             ),
                           ),
@@ -303,7 +306,7 @@ class _FormWidgetState extends State<FormWidget> {
                           fontSize: 8,
                           fontFamily: 'Pretendard',
                           fontWeight: FontWeight.w400,
-                          height: 0,
+                          height: 1.0,
                           letterSpacing: -0.08,
                         ),
                         textAlignVertical: TextAlignVertical(y:1.0),
@@ -331,6 +334,9 @@ class _FormWidgetState extends State<FormWidget> {
                           return null;
                         },
                         onSaved: (value) => password = value!,
+                        onChanged: (value) {
+                          password = value;
+                        },
                         decoration: InputDecoration(
                             hintText: '비밀번호를 입력해주세요',
                             enabledBorder: OutlineInputBorder(
@@ -362,7 +368,7 @@ class _FormWidgetState extends State<FormWidget> {
                               fontSize: 10,
                               fontFamily: 'Pretendard',
                               fontWeight: FontWeight.w600,
-                              height: 0,
+                              height: 1.0,
                               letterSpacing: -0.10,
                               ),
                             ),
@@ -385,7 +391,7 @@ class _FormWidgetState extends State<FormWidget> {
                           fontSize: 8,
                           fontFamily: 'Pretendard',
                           fontWeight: FontWeight.w400,
-                          height: 0,
+                          height: 1.0,
                           letterSpacing: -0.08,
                         ),
                         textAlignVertical: TextAlignVertical(y:1.0),
@@ -413,6 +419,9 @@ class _FormWidgetState extends State<FormWidget> {
                           return null;
                         },
                         onSaved: (value) => confirmPassword = value!,
+                        onChanged: (value) {
+                          confirmPassword = value;
+                        },
                         decoration: InputDecoration(
                             hintText: '비밀번호를 다시 입력해주세요',
                             enabledBorder: OutlineInputBorder(
@@ -444,7 +453,7 @@ class _FormWidgetState extends State<FormWidget> {
                               fontSize: 10,
                               fontFamily: 'Pretendard',
                               fontWeight: FontWeight.w600,
-                              height: 0,
+                              height: 1.0,
                               letterSpacing: -0.10,
                             ),
                            ),
@@ -459,7 +468,7 @@ class _FormWidgetState extends State<FormWidget> {
                             fontSize: 10,
                             fontFamily: 'Pretendard',
                             fontWeight: FontWeight.w600,
-                            height: 0,
+                            height: 1.0,
                             letterSpacing: -0.10,
                           ),
                         ),
@@ -485,7 +494,7 @@ class _FormWidgetState extends State<FormWidget> {
                               fontSize: 8,
                               fontFamily: 'Pretendard',
                               fontWeight: FontWeight.w400,
-                              height: 0,
+                              height: 1.0,
                               letterSpacing: -0.08,
                               ),
                             textAlignVertical: TextAlignVertical(y:1.0),
@@ -504,6 +513,9 @@ class _FormWidgetState extends State<FormWidget> {
                             controller: TextEditingController(text: name),
                             //이름 형식 검사 (추가 필요)
                             onSaved: (value) => name = value!,
+                            onChanged: (value) {
+                              name = value;
+                            },
                             decoration: InputDecoration(
                               hintText: '이름을 입력해주세요',
                               enabledBorder: OutlineInputBorder(
@@ -541,7 +553,7 @@ class _FormWidgetState extends State<FormWidget> {
                                   fontSize: 8,
                                   fontFamily: 'Pretendard',
                                   fontWeight: FontWeight.w400,
-                                  height: 0,
+                                  height: 1.0,
                                   letterSpacing: -0.08,
                                 ),
                               ),
