@@ -7,12 +7,16 @@
     <list default="true" id="e46611d8-f138-424c-a426-9c5e1c873648" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/2794971a5855e7decd7bb368de5d49d1.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/2794971a5855e7decd7bb368de5d49d1.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/general_user/match_Info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/general_user/match_Info.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login_and_signup/LogIn.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login_and_signup/LogIn.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kakao_map_plugin-0.3.0/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,5 +69,16 @@
       <updated>1714657693647</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

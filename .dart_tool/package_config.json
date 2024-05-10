@@ -170,12 +170,6 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "kakao_map_plugin_example",
-      "rootUri": "../modules/kakao_map_plugin-0.3.0/example",
-      "packageUri": "lib/",
-      "languageVersion": "2.18"
-    },
-    {
       "name": "leak_tracker",
       "rootUri": "file:///Users/leo/.pub-cache/hosted/pub.dev/leak_tracker-10.0.5",
       "packageUri": "lib/",
@@ -452,7 +446,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-09T09:55:40.241901Z",
+  "generated": "2024-05-10T14:48:16.938394Z",
   "generator": "pub",
   "generatorVersion": "3.5.0-138.0.dev",
   "flutterRoot": "file:///Users/leo/flutter",

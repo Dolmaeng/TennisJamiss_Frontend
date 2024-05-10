@@ -215,13 +215,6 @@ packages:
       relative: true
     source: path
     version: "0.3.0"
-  kakao_map_plugin_example:
-    dependency: "direct main"
-    description:
-      path: "modules/kakao_map_plugin-0.3.0/example"
-      relative: true
-    source: path
-    version: "0.0.0"
   leak_tracker:
     dependency: transitive
     description:
