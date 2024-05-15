@@ -4,6 +4,8 @@ import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'dart:convert';
 
+import 'package:tennis_jamiss/screens/login_and_signup/sign_up_done.dart';
+
 class UserSignUp extends StatefulWidget {
   @override
   _UserSignUpState createState() => _UserSignUpState();
@@ -49,10 +51,23 @@ class _FormWidgetState extends State<FormWidget> {
   int age = 0;
   String gender = 'Male';
   double ntrp = 1.0;
-  final List<bool> user_genderToggle = [true, false];
+  String confirmNum = '';
 
   //사용자의 포커스 여부
   bool _isFocused = false;
+
+  // 남녀 toggle button
+  final isMale = [true, false];
+
+  // NTRP dropdownbutton
+  List<double> NTRP_List = <double>[1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 7.0];
+  double? selectedNtrp;
+  void initState() {
+    super.initState();
+    setState(() {
+      selectedNtrp = NTRP_List[0];
+    });
+  }
 
   // 아이디 중복 확인
   bool isIDverification = false;
@@ -119,6 +134,7 @@ class _FormWidgetState extends State<FormWidget> {
 
   //날짜 설정 기능
   final birthdayController = TextEditingController();
+
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
       context: context,
@@ -584,7 +600,6 @@ class _FormWidgetState extends State<FormWidget> {
                     ),
                   ],
                 ),
-
                 SizedBox(height: 23),
                 // 성별 NTRP
                 Row(
@@ -621,14 +636,99 @@ class _FormWidgetState extends State<FormWidget> {
                     ),
                   ],
                 ),
-
+                SizedBox(height: 3),
+                Row(
+                  children: [
+                    SizedBox(width: 40),
+                    ToggleButtons(
+                      constraints: BoxConstraints(
+                        minHeight: 20,
+                        maxWidth: 100,
+                      ),
+                      children: [
+                        Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Text('남자',
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  fontFamily: 'Pretendard',
+                                  fontWeight: FontWeight.w400,
+                                  letterSpacing: -0.10,
+                                ))),
+                        Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Text('여자',
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  fontFamily: 'Pretendard',
+                                  fontWeight: FontWeight.w400,
+                                  letterSpacing: -0.10,
+                                ))),
+                      ],
+                      isSelected: isMale,
+                      selectedBorderColor: Color(0xFF464EFF),
+                      fillColor: Color(0xFF464EFF),
+                      selectedColor: Colors.white,
+                      borderRadius: BorderRadius.circular(3),
+                      onPressed: (index) {
+                        setState(() {
+                          for (int buttonIndex = 0;
+                              buttonIndex < isMale.length;
+                              buttonIndex++) {
+                            if (buttonIndex == index) {
+                              isMale[buttonIndex] = true;
+                            } else {
+                              isMale[buttonIndex] = false;
+                            }
+                          }
+                        });
+                      },
+                    ),
+                    SizedBox(width: 70,),
+                    DropdownButton<double>(
+                      // 드롭다운의 리스트를 보여줄 값
+                      value: selectedNtrp,
+                      items: NTRP_List.map((double item) {
+                        return DropdownMenuItem<double>(
+                          value: item,
+                          child: Text(item.toString()),
+                        );
+                      }).toList(),
+                      onChanged: (item) {
+                        setState(() {
+                          selectedNtrp = item!;
+                        });
+                      },
+                    )
+                  ],
+                ),
+                SizedBox(height: 20,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children:[
+                    Padding(
+                  padding: EdgeInsets.only(left: 35),
+                  child: Text(
+                    '이메일',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 10,
+                      fontFamily: 'Pretendard',
+                      fontWeight: FontWeight.w600,
+                      height: 1.0,
+                      letterSpacing: -0.10,
+                    ),
+                  ),
+                ),
+                  ]
+                ),
                 SizedBox(height: 3),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     SizedBox(width: 38),
                     Container(
-                      width: 175,
+                      width: 200,
                       height: 30,
                       decoration: ShapeDecoration(
                         shape: RoundedRectangleBorder(
@@ -658,21 +758,21 @@ class _FormWidgetState extends State<FormWidget> {
                             _isFocused = false;
                           });
                         },
-                        controller: TextEditingController(text: name),
-                        //이름 형식 검사 (추가 필요)
-                        onSaved: (value) => name = value!,
+                        controller: TextEditingController(text: email),
+                        //이메일 형식 검사 (추가 필요)
+                        onSaved: (value) => email = value!,
                         onChanged: (value) {
-                          name = value;
+                          email = value;
                         },
                         decoration: InputDecoration(
-                            hintText: '이름을 입력해주세요',
+                            hintText: '이메일을 입력해주세요',
                             enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5),
                                 borderSide: BorderSide(color: Colors.grey)),
                             focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5),
                                 borderSide:
-                                    BorderSide(color: Color(0xFF464EFF))),
+                                BorderSide(color: Color(0xFF464EFF))),
                             errorBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5),
                                 borderSide: BorderSide(color: Colors.red)),
@@ -682,8 +782,39 @@ class _FormWidgetState extends State<FormWidget> {
                       ),
                     ),
                     SizedBox(width: 10),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          minimumSize: Size(80, 30),
+                          backgroundColor: Color(0xFF464EFF),
+                          shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                  width: 1,
+                                  color: Color(0xFF464EFF)),
+                              borderRadius:
+                              BorderRadius.circular(5))),
+                      onPressed: () {
+                        // Todo : 인증번호 요청 발송
+                      },
+                      child: Text('인증 번호 발송',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: -0.10,
+                          )),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 3),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    SizedBox(width: 38),
                     Container(
-                      width: 125,
+                      width: 200,
                       height: 30,
                       decoration: ShapeDecoration(
                         shape: RoundedRectangleBorder(
@@ -691,44 +822,111 @@ class _FormWidgetState extends State<FormWidget> {
                           borderRadius: BorderRadius.circular(5),
                         ),
                       ),
-                      child: ListTile(
-                        dense: true,
-                        visualDensity: VisualDensity(vertical: -4),
-                        leading: Icon(
-                          Icons.calendar_today,
-                          size: 15,
+                      child: TextFormField(
+                        style: TextStyle(
+                          color: Color(0xFF919191),
+                          fontSize: 8,
+                          fontFamily: 'Pretendard',
+                          fontWeight: FontWeight.w400,
+                          height: 1.0,
+                          letterSpacing: -0.08,
                         ),
-                        title: Text(
-                          DateFormat(
-                            'yyyy.MM.dd',
-                          ).format(user_birthdate),
-                          style: TextStyle(
-                            color: Color(0xFF919191),
-                            fontSize: 8,
-                            fontFamily: 'Pretendard',
-                            fontWeight: FontWeight.w400,
-                            height: 1.0,
-                            letterSpacing: -0.08,
-                          ),
-                        ),
-                        onTap: () async {
-                          final DateTime? picked = await showDatePicker(
-                            context: context,
-                            initialDate: user_birthdate,
-                            firstDate: DateTime(1900),
-                            lastDate: DateTime.now(),
-                          );
-                          if (picked != null && picked != user_birthdate) {
-                            setState(() {
-                              user_birthdate = picked;
-                              age = calculateAge(picked);
-                            });
-                          }
+                        textAlignVertical: TextAlignVertical(y: 1.0),
+                        // 포커스를 받았을 때 상태 업데이트
+                        onTap: () {
+                          setState(() {
+                            _isFocused = true;
+                          });
                         },
+                        // 포커스를 잃었을 때 상태 업데이트
+                        onFieldSubmitted: (value) {
+                          setState(() {
+                            _isFocused = false;
+                          });
+                        },
+                        controller: TextEditingController(text: confirmNum),
+                        //이메일 형식 검사 (추가 필요)
+                        onSaved: (value) => confirmNum = value!,
+                        onChanged: (value) {
+                          confirmNum = value;
+                        },
+                        decoration: InputDecoration(
+                            hintText: '인증번호를 입력해주세요',
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                borderSide: BorderSide(color: Colors.grey)),
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                borderSide:
+                                BorderSide(color: Color(0xFF464EFF))),
+                            errorBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                borderSide: BorderSide(color: Colors.red)),
+                            focusedErrorBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                borderSide: BorderSide(color: Colors.red))),
                       ),
                     ),
+                    SizedBox(width: 10),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          minimumSize: Size(80, 30),
+                          backgroundColor: Color(0xFF464EFF),
+                          shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                  width: 1,
+                                  color: Color(0xFF464EFF)),
+                              borderRadius:
+                              BorderRadius.circular(5))),
+                      onPressed: () {
+                        // Todo : 인증번호 요청 발송
+                      },
+                      child: Text('인증번호 확인',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: -0.10,
+                          )),
+                    ),
                   ],
-                )
+                ),
+                SizedBox(height: 75),
+                Container(
+                  child: Center(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          minimumSize: Size(315, 30),
+                          backgroundColor: Color(0xFF464EFF),
+                          shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                  width: 1,
+                                  color: Color(0xFF464EFF)),
+                              borderRadius:
+                              BorderRadius.circular(20))),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignUpDone()),
+                        );
+                      },
+                      child: Text('가입하기',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: -0.10,
+                          )),
+                    ),
+                  ),
+                ),
               ]),
         ),
       ),
