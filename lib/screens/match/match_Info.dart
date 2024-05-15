@@ -178,7 +178,7 @@ class _MatchInfoState extends State<MatchInfo> with TickerProviderStateMixin {
                                   // 예약 일자
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        10, 0, 10, 0),
+                                        0, 0, 0, 0),
                                     child: InkWell(
                                       child: Container(
                                         width: 105,
@@ -303,7 +303,7 @@ class _MatchInfoState extends State<MatchInfo> with TickerProviderStateMixin {
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        10, 0, 10, 0),
+                                        10, 0, 5, 0),
                                     child: InkWell(
                                       child: Container(
                                         width: 85,
@@ -835,9 +835,12 @@ class _MatchInfoState extends State<MatchInfo> with TickerProviderStateMixin {
                     SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 3),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(20, 0, 20, 10),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width,
                               height: MediaQuery.sizeOf(context).height * 0.13,
@@ -848,7 +851,7 @@ class _MatchInfoState extends State<MatchInfo> with TickerProviderStateMixin {
                                 children: [
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        20, 0, 0, 0),
+                                        20, 0, 0, 10),
                                     child: Text('나의 위치',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
@@ -861,44 +864,47 @@ class _MatchInfoState extends State<MatchInfo> with TickerProviderStateMixin {
                                         )),
                                   ),
                                   Container(
-                                    height: 30,
-                                    width: 315,
-                                    child: ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                            backgroundColor: Color(0xFF464EFF),
-                                            shape: RoundedRectangleBorder(
-                                                side: BorderSide(
-                                                    width: 1,
-                                                    color: Color(0xFF464EFF)),
-                                                borderRadius:
-                                                    BorderRadius.circular(20))),
-                                        onPressed: () {
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    LocationMap()),
-                                          );
-                                        },
-                                        child: Row(children: [
-                                          Icon(
-                                            Icons.gps_fixed,
-                                            color: Colors.white,
-                                            size: 20,
-                                          ),
-                                          Text(
-                                            '내 동네 인증하기',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
+                                    child: Center(
+                                      child: ElevatedButton(
+                                          style: ElevatedButton.styleFrom(
+                                              minimumSize: Size(315, 30),
+                                              backgroundColor:
+                                                  Color(0xFF464EFF),
+                                              shape: RoundedRectangleBorder(
+                                                  side: BorderSide(
+                                                      width: 1,
+                                                      color: Color(0xFF464EFF)),
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          20))),
+                                          onPressed: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      LocationMap()),
+                                            );
+                                          },
+                                          child: Row(children: [
+                                            Icon(
+                                              Icons.gps_fixed,
                                               color: Colors.white,
-                                              fontSize: 10,
-                                              fontFamily: 'Pretendard',
-                                              fontWeight: FontWeight.w700,
-                                              height: 0,
-                                              letterSpacing: -0.10,
+                                              size: 20,
                                             ),
-                                          ),
-                                        ])),
+                                            Text(
+                                              '내 동네 인증하기',
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 10,
+                                                fontFamily: 'Pretendard',
+                                                fontWeight: FontWeight.w700,
+                                                height: 0,
+                                                letterSpacing: -0.10,
+                                              ),
+                                            ),
+                                          ])),
+                                    ),
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
@@ -929,7 +935,7 @@ class _MatchInfoState extends State<MatchInfo> with TickerProviderStateMixin {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 3),
+                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width,
                               height: MediaQuery.sizeOf(context).height * 0.13,
@@ -964,118 +970,155 @@ class _MatchInfoState extends State<MatchInfo> with TickerProviderStateMixin {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 10, 20, 10),
+                                                    20, 10, 20, 0),
                                             child: Row(
-                                              mainAxisSize: MainAxisSize.max,
                                               children: [
+                                                // 예약 일자
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 0, 10, 0),
-                                                  child: Container(
-                                                    width: 100,
-                                                    height: 25,
-                                                    decoration: ShapeDecoration(
-                                                      shape:
-                                                          RoundedRectangleBorder(
-                                                        side: BorderSide(
-                                                            width: 1,
-                                                            color: Color(
-                                                                0xFFD3D3D3)),
+                                                      .fromSTEB(0, 0, 0, 0),
+                                                  child: InkWell(
+                                                    child: Container(
+                                                      width: 105,
+                                                      height: 25,
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                              horizontal: 8,
+                                                              vertical: 4),
+                                                      decoration: BoxDecoration(
+                                                        border: Border.all(
+                                                            color: Colors.grey,
+                                                            width: 1),
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(5),
                                                       ),
-                                                    ),
-                                                    child: ListTile(
-                                                      dense: true,
-                                                      visualDensity:
-                                                          VisualDensity(
-                                                              vertical: -4),
-                                                      leading: Icon(
-                                                        Icons.calendar_today,
-                                                        size: 15,
+                                                      child: Row(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .start,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .center,
+                                                        children: <Widget>[
+                                                          Icon(
+                                                              Icons
+                                                                  .calendar_today,
+                                                              size: 15),
+                                                          SizedBox(width: 16),
+                                                          Flexible(
+                                                            child: Text(
+                                                              Reserved_Date !=
+                                                                      null
+                                                                  ? DateFormat(
+                                                                          'yyyy-MM-dd')
+                                                                      .format(
+                                                                          Reserved_Date!)
+                                                                  : '날짜',
+                                                              style: TextStyle(
+                                                                color: Color(
+                                                                    0xFF919191),
+                                                                fontSize: 8,
+                                                                fontFamily:
+                                                                    'Pretendard',
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w400,
+                                                              ),
+                                                            ),
+                                                          )
+                                                        ],
                                                       ),
-                                                      title: Text(
-                                                        '날짜',
-                                                        style: TextStyle(
-                                                          color:
-                                                              Color(0xFF919191),
-                                                          fontSize: 8,
-                                                          fontFamily:
-                                                              'Pretendard',
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          letterSpacing: -0.08,
-                                                        ),
-                                                      ),
-                                                      onTap: () async {
-                                                        final DateTime? picked =
-                                                            await showDatePicker(
-                                                          context: context,
-                                                          initialDate:
-                                                              DateTime.now(),
-                                                          firstDate:
-                                                              DateTime(1900),
-                                                          lastDate:
-                                                              DateTime.now(),
-                                                        );
-                                                      },
                                                     ),
+                                                    onTap: () async {
+                                                      final DateTime? picked =
+                                                          await showDatePicker(
+                                                        context: context,
+                                                        initialDate:
+                                                            DateTime.now(),
+                                                        firstDate:
+                                                            DateTime.now(),
+                                                        lastDate:
+                                                            DateTime(2025),
+                                                      );
+                                                      if (picked != null &&
+                                                          picked !=
+                                                              Reserved_Date) {
+                                                        setState(() {
+                                                          Reserved_Date =
+                                                              picked;
+                                                        });
+                                                      }
+                                                    },
                                                   ),
                                                 ),
+                                                // 예약 시작 시간
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 0, 10, 0),
-                                                  child: Container(
-                                                    width: 100,
-                                                    height: 25,
-                                                    decoration: ShapeDecoration(
-                                                      shape:
-                                                          RoundedRectangleBorder(
-                                                        side: BorderSide(
-                                                            width: 1,
-                                                            color: Color(
-                                                                0xFFD3D3D3)),
+                                                      .fromSTEB(10, 0, 10, 0),
+                                                  child: InkWell(
+                                                    child: Container(
+                                                      width: 85,
+                                                      height: 25,
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                              horizontal: 8,
+                                                              vertical: 4),
+                                                      decoration: BoxDecoration(
+                                                        border: Border.all(
+                                                            color: Colors.grey,
+                                                            width: 1),
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(5),
                                                       ),
-                                                    ),
-                                                    child: ListTile(
-                                                      dense: true,
-                                                      visualDensity:
-                                                          VisualDensity(
-                                                              vertical: -4),
-                                                      leading: Icon(
-                                                        Icons.calendar_today,
-                                                        size: 15,
+                                                      child: Row(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .start,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .center,
+                                                        children: <Widget>[
+                                                          Icon(Icons.alarm,
+                                                              size: 15),
+                                                          SizedBox(width: 16),
+                                                          Flexible(
+                                                            child: Text(
+                                                              Start_Time == null
+                                                                  ? '시작 시간'
+                                                                  : '${Start_Time!.format(context)}',
+                                                              style: TextStyle(
+                                                                color: Color(
+                                                                    0xFF919191),
+                                                                fontSize: 8,
+                                                                fontFamily:
+                                                                    'Pretendard',
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w400,
+                                                              ),
+                                                            ),
+                                                          )
+                                                        ],
                                                       ),
-                                                      title: Text(
-                                                        '날짜',
-                                                        style: TextStyle(
-                                                          color:
-                                                              Color(0xFF919191),
-                                                          fontSize: 8,
-                                                          fontFamily:
-                                                              'Pretendard',
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          letterSpacing: -0.08,
-                                                        ),
-                                                      ),
-                                                      onTap: () async {
-                                                        final DateTime? picked =
-                                                            await showDatePicker(
-                                                          context: context,
-                                                          initialDate:
-                                                              DateTime.now(),
-                                                          firstDate:
-                                                              DateTime(1900),
-                                                          lastDate:
-                                                              DateTime.now(),
-                                                        );
-                                                      },
                                                     ),
+                                                    onTap: () async {
+                                                      final TimeOfDay? picked =
+                                                          await showTimePicker(
+                                                        context: context,
+                                                        initialTime:
+                                                            Start_Time ??
+                                                                TimeOfDay.now(),
+                                                      );
+                                                      if (picked != null &&
+                                                          picked !=
+                                                              Start_Time) {
+                                                        setState(() {
+                                                          Start_Time = picked;
+                                                        });
+                                                      }
+                                                    },
                                                   ),
                                                 ),
                                                 Text(
@@ -1091,63 +1134,73 @@ class _MatchInfoState extends State<MatchInfo> with TickerProviderStateMixin {
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 0, 10, 0),
-                                                  child: Container(
-                                                    width: 100,
-                                                    height: 25,
-                                                    decoration: ShapeDecoration(
-                                                      shape:
-                                                          RoundedRectangleBorder(
-                                                        side: BorderSide(
-                                                            width: 1,
-                                                            color: Color(
-                                                                0xFFD3D3D3)),
+                                                      .fromSTEB(10, 0, 5, 0),
+                                                  child: InkWell(
+                                                    child: Container(
+                                                      width: 85,
+                                                      height: 25,
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                              horizontal: 8,
+                                                              vertical: 4),
+                                                      decoration: BoxDecoration(
+                                                        border: Border.all(
+                                                            color: Colors.grey,
+                                                            width: 1),
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(5),
                                                       ),
-                                                    ),
-                                                    child: ListTile(
-                                                      dense: true,
-                                                      visualDensity:
-                                                          VisualDensity(
-                                                              vertical: -4),
-                                                      leading: Icon(
-                                                        Icons.calendar_today,
-                                                        size: 15,
+                                                      child: Row(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .start,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .center,
+                                                        children: <Widget>[
+                                                          Icon(Icons.alarm,
+                                                              size: 15),
+                                                          SizedBox(width: 16),
+                                                          Flexible(
+                                                            child: Text(
+                                                              Start_Time == null
+                                                                  ? '종료 시간'
+                                                                  : '${Start_Time!.format(context)}',
+                                                              style: TextStyle(
+                                                                color: Color(
+                                                                    0xFF919191),
+                                                                fontSize: 8,
+                                                                fontFamily:
+                                                                    'Pretendard',
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w400,
+                                                              ),
+                                                            ),
+                                                          )
+                                                        ],
                                                       ),
-                                                      title: Text(
-                                                        '날짜',
-                                                        style: TextStyle(
-                                                          color:
-                                                              Color(0xFF919191),
-                                                          fontSize: 8,
-                                                          fontFamily:
-                                                              'Pretendard',
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          letterSpacing: -0.08,
-                                                        ),
-                                                      ),
-                                                      onTap: () async {
-                                                        final DateTime? picked =
-                                                            await showDatePicker(
-                                                          context: context,
-                                                          initialDate:
-                                                              DateTime.now(),
-                                                          firstDate:
-                                                              DateTime(1900),
-                                                          lastDate:
-                                                              DateTime.now(),
-                                                        );
-                                                      },
                                                     ),
+                                                    onTap: () async {
+                                                      final TimeOfDay? picked =
+                                                          await showTimePicker(
+                                                        context: context,
+                                                        initialTime: End_Time ??
+                                                            TimeOfDay.now(),
+                                                      );
+                                                      if (picked != null &&
+                                                          picked != End_Time) {
+                                                        setState(() {
+                                                          End_Time = picked;
+                                                        });
+                                                      }
+                                                    },
                                                   ),
                                                 ),
-                                                // todo : 시작시간, 종료시간 list 만들기
                                               ],
                                             ),
-                                          ),
+                                          )
                                         ],
                                       ),
                                     ),
