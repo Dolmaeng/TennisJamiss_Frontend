@@ -1,7 +1,9 @@
 # 테니스 재미쓰 🎾
 <img src="[https://github.com/PreScent-sc23/frontend/assets/134992891/ff0083b6-5299-44db-ad8d-888b855a41bf](https://github.com/Dolmaeng/TennisJamiss_Frontend/blob/main/assets/images/tennis.logo.svg)" width="800" height="auto"/>
 
-> PreScent는 선물을 의미하는 Present와 꽃의 향기를 의미하는 Scent의 합성어입니다.  
+> 너랑 나랑 테니스! 재미쓰!
+> 내가 원하는 시간에, 근처에서, 원하는 상대와 테니스를 친다!
+> 국내 최초 AI 테니스 매칭 플랫폼
 
 ## 메인 로고 🎨
 <img src="https://github.com/PreScent-sc23/frontend/assets/134992891/3fd67d35-404d-4794-a435-84df6bd03c1e/svglogo.svg" width="60" height="60"/>
