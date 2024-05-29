@@ -1,178 +1,74 @@
-<div align="center">
+# 테니스 재미쓰 🎾
+<img src="https://github.com/PreScent-sc23/frontend/assets/134992891/ff0083b6-5299-44db-ad8d-888b855a41bf" width="800" height="auto"/>
+
+> PreScent는 선물을 의미하는 Present와 꽃의 향기를 의미하는 Scent의 합성어입니다.  
+
+## 메인 로고 🎨
+<img src="https://github.com/PreScent-sc23/frontend/assets/134992891/3fd67d35-404d-4794-a435-84df6bd03c1e/svglogo.svg" width="60" height="60"/>
+
+## 프로젝트 개요 📖
+  많은 사람이 꽃 선물을 주고받습니다. 
+  하지만 자체 설문 조사에 따르면, 꽃 구매 시에 매장에 방문하기 전에는 꽃가게 정보, 꽃말, 가격 등 꽃 구매에 필요한 정보들을 얻기 힘든 점이 불편했고, 
+  주고받은 꽃 선물의 의미를 모르는 경우가 많았습니다.
+
+  이를 해결하기 위해 꽃가게와 구매자의 상품 거래를 연결하는 플랫폼을 구축하였습니다. 
   
-###  테니스 재미쓰 🎾
+  플랫폼은 판매자가 등록한 정보들과 주문서를 통해 꽃 구매자들이 간편하게 꽃을 주문할 수 있게 하고, 
+  사용자가 꽃 사진을 업로드하면  AI 꽃 분석 기능을 통해 사용자가 업로드한 꽃다발 사진 속 꽃의 이름과 꽃말 정보를 제공합니다. 
+  또한 이 정보를 바탕으로 GPT를 활용하여 해당 사진의 분위기를 추출하여 해당 분위기와 유사한 상황 태그 검색어를 제공하여, 업로드한 사진과 유사한 분위기의 상품을 추천 받을 수 있도록 합니다.
+  
+  해당 서비스를 통해 판매자에게는 주문 관리 및 매장 관리의 편의성을 제공하고, 구매자에게는 보다 만족스러운 꽃 주문 경험을 제공합니다.
+<br/><br/><br/>
+이 프로젝트는 아주대학교 2023년 2학기 SW캡스톤디자인 과목에서 실시한 프로젝트로,<br/> 
+5인으로 구성된 Unknown 팀이 2023년 9월 7일부터 12월 10일까지 진행하였습니다.
+<br/> <br/> 
+**이 레포지토리는 전체 프로젝트 레포지토리입니다. 프론트엔드 및 백엔드 레포는 아래 링크를 확인해주세요.**
+<br/> 
+- 프론트엔드(React): https://github.com/PreScent-sc23/frontend
+- 백엔드(SpringBoot): https://github.com/PreScent-sc23/backend
 
-[![codecov](https://codecov.io/gh/beminder/BeautyMinder/graph/badge.svg?token=XJ79PXGWBC)](https://codecov.io/gh/beminder/BeautyMinder)
-![OpenAI API Documentation](https://github.com/beminder/BeautyMinder/actions/workflows/api-doc.yml/badge.svg)
-![Continuous Delivery & Jacoco CodeCoverage](https://github.com/beminder/BeautyMinder/actions/workflows/deployment-and-code-coverage-workflow.yml/badge.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br/>
 
-</div>
+#### 프론트엔드
+|**이름**|**email**|**github**|
+|--|-----|-----|
+|최윤지|yyy0304@ajou.ac.rk|https://github.com/choiyz|
+|윤정환|jungwani98@ajou.ac.kr|https://github.com/201820722|
 
-## Overview 🌟
+<br/> 
 
-### 🇺🇸 English
+#### 백엔드
+|**이름**|**email**|**github**|
+|--|-----|-----|
+|서상원|swseo97@ajou.ac.kr|https://github.com/SnagwonSeo|
+|김수현|sooh@ajou.ac.kr|https://github.com/susooo|
+|김도윤|rlaehdbs20@ajou.ac.kr|https://github.com/Ajou-sipdo|
 
-**BeautyMinder** is the culmination of our capstone design class, commenced in September 2023.
+<br/> <br/>
+## 기술스택
+<img width="972" alt="KakaoTalk_20231203_223531617" src="https://github.com/PreScent-sc23/PreScent/assets/118275773/3a171f29-e91a-41e9-ab91-6305340ca04e">
+<br/> <br/>
 
-A comprehensive cosmetics management app, meticulously tuned to individual skin types as determined through the Baumann skin type assessment.
+## 서비스 요약
+## 주요 기능 🌷
+- 판매자 기능
+  - [x] 회원가입
+  - [x] 가게 등록
+  - [x] 상품 관리 
+  - [x] 완제품 상품 등록
+  - [x] 주문 제작 상품 주 양식 등록
+  - [x] 주문 내역 조회
+  - [x] 홈 광고 배너
 
-It integrates advanced technologies such as Flutter, AWS EC2, MongoDB, and Redis to provide a seamless and personalized user experience.
+- 고객 기능
+  - [x] 회원가입
+  - [x] 태그 검색 및 상품 정보 확인
+  - [x] 장바구니
+  - [x] 꽃말 사전 (PS:사전)
+  - [x] AI 꽃 분석 (PS:Lens)
+  - [x] GPT 활용 꽃다발 이미지 분위기 추출 
+  - [x] 카드 결제
+<br/>
+## 서비스 소개 포스터 🎞
+![1_11zon](https://github.com/PreScent-sc23/PreScent/assets/92291198/79de9a60-a103-478e-9b5d-90dbcf973381)
 
----
-
-### 🇰🇷 한국어
-
-**BeautyMinder**는 2023년 9~12월, 3달간 제작된 캡스톤 디자인 수업의 결과물입니다.
-
-Baumann 피부 유형 평가를 기반으로 한 개별 피부 유형에 맞춘 종합적인 화장품 관리 애플리케이션입니다.
-
-Flutter, Docker, ELK, Redis 등의 기술을 통합하여 사용자에게 맞춤형 경험을 제공합니다.
-
-## Key Features 🎉
-
-### 1. **Cosmetic Management**
-   - **Expiry Tracking (유통기한 관리)**: Automate management of product lifecycles with integrated expiration date monitoring.
-   - **OCR Integration**: Streamline product registration using Optical Character Recognition for effortless management.
-   - **Alerts & Reminders (유통기한 만료 알림)**: Receive alerts for impending product expirations and routine reminders, enhancing personal skincare discipline.
-   - **Skincare Diary (루틴 기능)**: Document and track your skincare journey with timeline and album features, observing tangible skin transformations.
-
-### 2. **Baumann Skin Type-Based Product Recommendations**
-   - **Discover Your Skin Type (바우만 타입 분석)**: Discover your unique skin type through the Baumann skin type assessment.
-   - **Customized Recommendations (바우만 타입에 따른 추천)**: Receive tailored product suggestions aligned with your specific skin type needs.
-
-### 3. **Information Discovery**
-   - **Summarized Reviews via GPT (GPT 리뷰 요약)**: Gain insights with AI-powered summaries of comprehensive product reviews.
-   - **Websocket Integration (바우만 실시간 채팅)**: Engage in active discussions with peers sharing similar Baumann skin types for communal knowledge exchange.
-
-## Technology Stack 🛠️
-
-> [!IMPORTANT]
-> Flutter, Spring Boot v3.1
-
-| Area                 | Technology                                                                                                                                                                      |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Frontend** | [Flutter](https://flutter.dev/)                                                                                                                                                 |
-| **Backend**    | [AWS EC2](https://aws.amazon.com/ko/ec2/) (Docker: Spring Boot+Redis+Logstash+FastAPI)                                                                                          |
-| **Database**         | MongoDB (hosted on [Atlas](https://www.mongodb.com/ko-kr/atlas/database)), [AWS S3](https://aws.amazon.com/ko/s3/)                                                              |
-| **Real-Time Metrics** | [Redis](https://redis.io/)                                                                                                                                                      |
-| **WebSocket**        | [STOMP](https://github.com/stomp-js/stompjs)                                                                                                                                    |
-| **Search Engine**    | Elasticsearch ([AWS OpenSearch](https://aws.amazon.com/ko/what-is/opensearch/))                                                                                                 |
-| **Log analysis**     | [Logstash](https://www.elastic.co/kr/logstash), Kibana ([AWS OpenSearch Dashboard](https://docs.aws.amazon.com/ko_kr/opensearch-service/latest/developerguide/dashboards.html)) |
-| **Text Summarization** | [GPT API](https://platform.openai.com/docs/guides/text-generation)                                                                                                              |
-| **Image OCR**        | [Google Cloud Vision](https://cloud.google.com/vision?hl=ko)                                                                                                                    |
-| **Notification Svcs** | [Naver Cloud SMS API](https://api.ncloud-docs.com/docs/ai-application-service-sens-smsv2), SMTP Protocol                                                                        |
-| **DevOps**           | [JUnit5](https://junit.org/junit5/), [Locust](https://locust.io/), [GitHub Actions](https://github.com/features/actions), AWS Elastic LoadBalancer                                                        |
-
-## System Architecture 🏗️
-![Group 10](https://github.com/beminder/BeautyMinder/assets/2356749/ba7cbe30-a516-40aa-96e6-06656bc47068)
-![sa](https://github.com/beminder/BeautyMinder/assets/2356749/4fa9732d-3358-45e1-92a4-24c5c6f28382)
-
-## Baumann Skin Type Survey
-![types](https://cdn.shopify.com/s/files/1/0740/5984/1838/files/img_1_-_16-baumann-skin-types_800x.png?v=1689709313)
-
-1. **Individual Question Score Calculation:**
-
-For each question in the survey, a score is calculated based on the selected option. The scoring function can be represented as:
-
-$$
-\text{{score}}(q_i) =
-\begin{cases}
-1.0, & \text{if option 1 is selected;} \\
-2.0, & \text{if option 2 is selected;} \\
-3.0, & \text{if option 3 is selected;} \\
-4.0, & \text{if option 4 is selected;} \\
-2.5, & \text{if option 5 is selected (special case);} \\
-0.0, & \text{if the choice is invalid or for specific two-choice questions.}
-\end{cases}
-$$
-
-For certain two-choice questions, a different rule applies:
-
-$$
-\text{{score}}(q_i) =
-\begin{cases}
-0.0, & \text{if option 1 is selected;} \\
-5.0, & \text{if option 2 is selected.}
-\end{cases}
-$$
-
-2. **Aggregate Category Scores:**
-
-For each category (A, B, C, D), the total score is the sum of the individual question scores within that category. If \(n\) is the number of questions in a category, and \(q_i\) represents each question:
-
-$$
-\text{{Total Score for a Category}} = \sum_{i=1}^{n} \text{{score}}(q_i)
-$$
-
-3. **Moisture Score Calculation:**
-
-The moisture score is calculated specifically from certain questions, represented as \(m_i\). If we assume there are \(k\) questions contributing to the moisture score:
-
-$$
-\text{{Moisture Score}} = \left( \frac{\sum_{i=1}^{k} \text{{score}}(m_i)}{16} \right) \times 100
-$$
-
-4. **Skin Type Determination:**
-
-Each category score is compared to a threshold to determine the skin type descriptor. This can be represented with the following conditions:
-
-$$
-\text{{Skin Type}} =
-\begin{cases}
-O, & \text{if A score} \geq 22; \\
-D, & \text{otherwise;}
-\end{cases}
-\]
-\[
-\begin{cases}
-R, & \text{if B score} \geq 32; \\
-S, & \text{otherwise;}
-\end{cases}
-\]
-\[
-\begin{cases}
-P, & \text{if C score} \geq 28.5; \\
-N, & \text{otherwise;}
-\end{cases}
-\]
-\[
-\begin{cases}
-W, & \text{if D score} \geq 42.5; \\
-T, & \text{otherwise.}
-\end{cases}
-$$
-
-5. **Result Compilation:**
-
-The final skin type is a string concatenation of the individual skin type descriptors from each category, represented as:
-
-$$
-\text{{Final Skin Type}} = \text{{Skin Type from A}} + \text{{Skin Type from B}} + \text{{Skin Type from C}} + \text{{Skin Type from D}}
-$$
-
-## Elasticsearch
-
-> [!IMPORTANT]
-> 은전한닢 + N-gram 
-
-![image](https://github.com/LeeZEun/beautyMinder/assets/2356749/b80069c3-7b96-4c80-a2c3-8600d258819a)
-
-## OCR (using Google Vision)
-https://github.com/beminder/BeautyMinder/assets/2356749/585bbfd4-1767-479a-99fb-fc40734a3c47
-
-## Email verification
-![email](https://github.com/beminder/BeautyMinder/assets/2356749/5c674c89-769f-420d-8190-af488e3425fa)
-
-## Team Members 👥
-| Name                                                          | Role           | Major                     |
-|---------------------------------------------------------------|----------------|---------------------------|
-| **Jieun Lee** ([LeeZEun](https://github.com/LeeZEun))         | Frontend        | Software Engineering      |
-| **Suji Bae** ([Bae-suji](https://github.com/Bae-suji))        | Frontend         | Software Engineering      |
-| **Yoon Wook Cho** ([yoonwook](https://github.com/yoonwook))   | Frontend         | Software Engineering      |
-| **Heesang Kwak** ([KWAKMANBO](https://github.com/KWAKMANBO))  | Frontend         | Software Engineering      |
-| **Seok Won Choi** ([Alfex4936](https://github.com/Alfex4936)) | Backend          | Software Engineering      |
-
-## License
-
-This project is licensed under the [**MIT license**](https://github.com/beminder/BeautyMinder/blob/main/LICENSE). Feel free to edit and distribute this template as you like.
