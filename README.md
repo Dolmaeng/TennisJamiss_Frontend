@@ -25,22 +25,31 @@
 #### 프론트엔드
 |**이름**|**email**|**github**|
 |--|-----|-----|
-|김동령|yyy0304@ajou.ac.rk|https://github.com/choiyz|
-||jungwani98@ajou.ac.kr|https://github.com/201820722|
+|김동령|insoyafear@ajou.ac.rk|https://github.com/dolmaeng|
+||||
 
 <br/> 
 
 #### 백엔드
 |**이름**|**email**|**github**|
 |--|-----|-----|
-|서상원|swseo97@ajou.ac.kr|https://github.com/SnagwonSeo|
-|김수현|sooh@ajou.ac.kr|https://github.com/susooo|
-|김도윤|rlaehdbs20@ajou.ac.kr|https://github.com/Ajou-sipdo|
+|한승훈|승훈@ajou.ac.kr||
+||||
+
+
+<br/> 
+#### AI
+|**이름**|**email**|**github**|
+|--|-----|-----|
+|송정우|이메일주소|깃헙링크|
+
 
 <br/> <br/>
 ## 기술스택
 <img width="972" alt="KakaoTalk_20231203_223531617" src="https://github.com/PreScent-sc23/PreScent/assets/118275773/3a171f29-e91a-41e9-ab91-6305340ca04e">
 <br/> <br/>
+
+## 시스템 아키텍처
 
 ## 서비스 요약
 ## 주요 기능 
