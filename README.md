@@ -48,8 +48,17 @@
 
 <br/> <br/>
 
-## 기술스택
+## ⚒️ 기술스택
 <!--<img width="972" alt="KakaoTalk_20231203_223531617" src="https://github.com/PreScent-sc23/PreScent/assets/118275773/3a171f29-e91a-41e9-ab91-6305340ca04e">-->
+### FE
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/react native-61DAFB?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/zustand-764ABC?style=for-the-badge&logo=redux&logoColor=white"/> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+### BE
+<img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/> 
+### AI
+<img src="https://img.shields.io/badge/tensorflow lite-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+ 
+<br />
+
 
 <br/> <br/>
 
