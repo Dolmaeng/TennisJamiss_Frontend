@@ -1,6 +1,6 @@
 <div align="center">
   
-# BeautyMinder 💄✨
+###  테니스 재미쓰 🎾
 
 [![codecov](https://codecov.io/gh/beminder/BeautyMinder/graph/badge.svg?token=XJ79PXGWBC)](https://codecov.io/gh/beminder/BeautyMinder)
 ![OpenAI API Documentation](https://github.com/beminder/BeautyMinder/actions/workflows/api-doc.yml/badge.svg)
