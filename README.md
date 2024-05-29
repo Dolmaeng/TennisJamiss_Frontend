@@ -1,5 +1,5 @@
 # 테니스 재미쓰 🎾
-<img src="https://github.com/PreScent-sc23/frontend/assets/134992891/ff0083b6-5299-44db-ad8d-888b855a41bf" width="800" height="auto"/>
+<img src="[https://github.com/PreScent-sc23/frontend/assets/134992891/ff0083b6-5299-44db-ad8d-888b855a41bf](https://github.com/Dolmaeng/TennisJamiss_Frontend/blob/main/assets/images/tennis.logo.svg)" width="800" height="auto"/>
 
 > PreScent는 선물을 의미하는 Present와 꽃의 향기를 의미하는 Scent의 합성어입니다.  
 
