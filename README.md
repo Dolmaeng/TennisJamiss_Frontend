@@ -1,5 +1,5 @@
 # 테니스 재미쓰 🎾
-<img src="[https://github.com/PreScent-sc23/frontend/assets/134992891/ff0083b6-5299-44db-ad8d-888b855a41bf](https://github.com/Dolmaeng/TennisJamiss_Frontend/blob/main/assets/images/tennis.logo.svg)" width="800" height="auto"/>
+<img src="https://raw.githubusercontent.com/Dolmaeng/TennisJamiss_Frontend/03eb0e54959bcd7f8ae3d69c747219313ba17d64/assets/images/tennis.logo.svg" width="800" height="auto"/>
 
 > 너랑 나랑 테니스! 재미쓰!
 > 내가 원하는 시간에, 근처에서, 원하는 상대와 테니스를 친다!
