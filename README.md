@@ -38,6 +38,7 @@
 
 
 <br/> 
+
 #### AI
 |**이름**|**email**|**github**|
 |--|-----|-----|
@@ -46,8 +47,10 @@
 
 
 <br/> <br/>
+
 ## 기술스택
 <!--<img width="972" alt="KakaoTalk_20231203_223531617" src="https://github.com/PreScent-sc23/PreScent/assets/118275773/3a171f29-e91a-41e9-ab91-6305340ca04e">-->
+
 <br/> <br/>
 
 ## 시스템 아키텍처
@@ -70,6 +73,8 @@
   - [x] 테니스 코트 등록 ...
   
 <br/>
+
 ## 서비스 포스터 🎞
+
 <!-- ![1_11zon](https://github.com/PreScent-sc23/PreScent/assets/92291198/79de9a60-a103-478e-9b5d-90dbcf973381) -->
 
