@@ -42,14 +42,16 @@
 |**이름**|**email**|**github**|
 |--|-----|-----|
 |송정우|이메일주소|깃헙링크|
+||||
 
 
 <br/> <br/>
 ## 기술스택
-<img width="972" alt="KakaoTalk_20231203_223531617" src="https://github.com/PreScent-sc23/PreScent/assets/118275773/3a171f29-e91a-41e9-ab91-6305340ca04e">
+<!--<img width="972" alt="KakaoTalk_20231203_223531617" src="https://github.com/PreScent-sc23/PreScent/assets/118275773/3a171f29-e91a-41e9-ab91-6305340ca04e">-->
 <br/> <br/>
 
 ## 시스템 아키텍처
+<br/> <br/>
 
 ## 서비스 요약
 ## 주요 기능 
